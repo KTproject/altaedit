@@ -1,6 +1,6 @@
 # Alta Edit
 
-A simple static landing page for **Alta Edit** — a curated guide to stylish women’s shoes in larger sizes, fit notes, and shopping finds for tall women.
+A static one-page landing site for **Alta Edit** — a curated guide to stylish women’s shoes in larger sizes, size and fit tools, and shopping finds for tall women.
 
 ## Files
 
@@ -8,17 +8,15 @@ A simple static landing page for **Alta Edit** — a curated guide to stylish wo
 index.html
 styles.css
 script.js
+assets/founder.png
 README.md
 ```
 
 ## Deploying on Vercel
 
-1. Push these files to your GitHub repository.
-2. Go to Vercel and import the GitHub repository.
-3. Framework preset: **Other** or **Static**
-4. Build command: leave empty
-5. Output directory: leave empty or use `.`
-6. Deploy.
+1. Push these files to the GitHub repository.
+2. Vercel will automatically redeploy from the `main` branch.
+3. The site is static HTML/CSS/JS, so no build command is needed.
 
 ## Brand direction
 

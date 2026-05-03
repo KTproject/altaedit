@@ -42,7 +42,7 @@ if (newsletterForm && formMessage) {
       return;
     }
 
-    formMessage.textContent = "Thank you — the email form is ready to connect to your newsletter tool.";
+    formMessage.textContent = "Thank you — the list form is ready to connect to your newsletter tool.";
     newsletterForm.reset();
   });
 }
