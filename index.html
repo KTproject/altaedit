@@ -37,133 +37,161 @@
       </button>
 
       <div class="nav-menu" id="nav-menu" data-nav-menu>
+        <a href="#latest-instagram">Instagram</a>
         <a href="#shoe-edit">The Shoe Edit</a>
         <a href="#size-fit">Size &amp; Fit</a>
-        <a href="#latest-finds">Latest Finds</a>
         <a href="#newsletter">Join the List</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section">
+    <section class="hero section" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Curated for taller frames</p>
-          <h1>Stylish shoes in larger sizes should not be this hard to find.</h1>
+          <p class="eyebrow">Larger-size shoe curation</p>
+          <h1 id="hero-title">Stylish shoes, beyond the standard size run.</h1>
           <p class="hero-text">
-            Alta Edit is a curated guide for tall women looking for fashionable shoes, size and fit tools, and shopping shortcuts made for tall women.
+            Alta Edit curates elegant, wearable shoes, fit notes and shopping shortcuts for tall women and women looking for larger sizes.
           </p>
 
           <div class="hero-actions">
             <a class="button button-primary" href="#shoe-edit">Browse the edit</a>
             <a class="button button-secondary" href="#newsletter">Get updates</a>
           </div>
-
-          <div class="trust-row" aria-label="Alta Edit focus areas">
-            <span>Large-size shoes</span>
-            <span>Size &amp; fit tools</span>
-            <span>Tall style finds</span>
-          </div>
         </div>
 
-        <div class="hero-card" aria-label="Alta Edit preview card">
+        <article class="hero-card" aria-label="Edited shoe find preview">
           <div class="hero-card-top">
+            <span class="hero-card-label">Edited Find</span>
             <span class="hero-card-label">EU 42+</span>
-            <span class="hero-card-label hero-card-label-dark">Edited Find</span>
           </div>
 
           <div class="shoe-visual" aria-hidden="true">
-            <div class="shoe-arch"></div>
-            <div class="shoe-base"></div>
-            <div class="shoe-heel"></div>
-          </div>
-
-          <div class="fit-note-card">
-            <span>Fit note</span>
-            <p>Check length, width, and return windows before saving the pair.</p>
+            <div class="shoe-line shoe-line-vamp"></div>
+            <div class="shoe-line shoe-line-sole"></div>
+            <div class="shoe-line shoe-line-heel"></div>
           </div>
 
           <div class="hero-card-content">
-            <h2>The Shoe Edit</h2>
+            <p class="fit-note-card">Fit note: narrow toe box</p>
             <p>Polished pairs, filtered for real size availability.</p>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section instagram-section" id="latest-instagram" aria-labelledby="instagram-title">
+      <div class="container">
+        <div class="section-header section-header-split">
+          <div>
+            <p class="eyebrow">Instagram</p>
+            <h2 id="instagram-title">Latest from Instagram</h2>
+          </div>
+          <div>
+            <p>New finds, brand discoveries and size notes are shared first on Instagram.</p>
+            <a class="text-link" href="https://www.instagram.com/altaedit.tall/" target="_blank" rel="noopener noreferrer">Visit @altaedit.tall</a>
+          </div>
+        </div>
+
+        <div class="instagram-grid" aria-label="Instagram placeholder cards">
+          <article class="instagram-card">
+            <span>New find</span>
+            <p>Clean flats spotted in an extended size run.</p>
+          </article>
+          <article class="instagram-card instagram-card-muted">
+            <span>Brand note</span>
+            <p>A quiet label worth checking for EU 42+ drops.</p>
+          </article>
+          <article class="instagram-card">
+            <span>Fit save</span>
+            <p>Toe shape, width clues and return-window reminders.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section intro-section">
-      <div class="container intro-grid">
-        <div>
-          <p class="eyebrow">Why Alta Edit</p>
-          <h2>Less endless scrolling. More options that actually fit.</h2>
-        </div>
-        <p>
-          Alta Edit brings together larger-size shoe finds, smarter size tools, and style guidance for tall women who are tired of choosing between fashionable and available.
-        </p>
-      </div>
-    </section>
-
-
-    <section class="section founder-section">
-      <div class="container founder-card">
-        <div class="founder-image-wrap">
-          <img src="assets/founder.png" alt="Founder of Alta Edit" class="founder-image" />
-        </div>
-        <div class="founder-copy">
-          <p class="eyebrow">Founder note</p>
-          <h2>Started by a tall woman who got tired of searching too hard.</h2>
-          <p>
-            Alta Edit is where I collect the shoe finds, sizing tools, and shopping
-            shortcuts I wish were easier to find — especially when the cute options
-            seem to stop just before your size.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="shoe-edit">
+    <section class="section" id="shoe-edit" aria-labelledby="shoe-edit-title">
       <div class="container">
         <div class="section-header">
           <p class="eyebrow">Start here</p>
-          <h2>The Shoe Edit</h2>
+          <h2 id="shoe-edit-title">The Shoe Edit</h2>
           <p>
-            Start with curated shoe categories designed to make larger-size shopping easier, faster, and more stylish.
+            Six concise starting points for polished larger-size shoe shopping, from everyday pairs to occasion-ready finds.
           </p>
         </div>
 
         <div class="category-grid">
           <article class="category-card">
             <span class="category-number">01</span>
-            <h3>Everyday shoes</h3>
-            <p>Flats, loafers, sneakers, and polished everyday pairs that work beyond the basics.</p>
-            <a href="#latest-finds" aria-label="View everyday shoe finds">View finds</a>
+            <h3>The Black Flat Edit</h3>
+            <p>Polished flats that work with tailoring, denim and long days.</p>
+            <a href="#latest-instagram" aria-label="View The Black Flat Edit finds">View finds</a>
           </article>
 
           <article class="category-card">
             <span class="category-number">02</span>
-            <h3>Occasion shoes</h3>
-            <p>Heels, sandals, and dressier finds for weddings, dinners, work events, and nights out.</p>
-            <a href="#latest-finds" aria-label="View occasion shoe finds">View finds</a>
+            <h3>The Low Heel Edit</h3>
+            <p>Quietly elegant heels with wearable height and real-life comfort.</p>
+            <a href="#latest-instagram" aria-label="View The Low Heel Edit finds">View finds</a>
           </article>
 
           <article class="category-card">
             <span class="category-number">03</span>
-            <h3>Boots & seasonal</h3>
-            <p>Ankle boots, knee-high boots, winter styles, and transitional pairs in extended sizes.</p>
-            <a href="#latest-finds" aria-label="View boot and seasonal finds">View finds</a>
+            <h3>The Occasion Sandal Edit</h3>
+            <p>Dressier sandals for weddings, dinners and last-minute invitations.</p>
+            <a href="#latest-instagram" aria-label="View The Occasion Sandal Edit finds">View finds</a>
+          </article>
+
+          <article class="category-card">
+            <span class="category-number">04</span>
+            <h3>The Tall-Girl Boot Edit</h3>
+            <p>Boots chosen with shaft height, calf fit and size range in mind.</p>
+            <a href="#latest-instagram" aria-label="View The Tall-Girl Boot Edit finds">View finds</a>
+          </article>
+
+          <article class="category-card">
+            <span class="category-number">05</span>
+            <h3>The Everyday Sneaker Edit</h3>
+            <p>Clean sneakers that feel considered, not like a compromise.</p>
+            <a href="#latest-instagram" aria-label="View The Everyday Sneaker Edit finds">View finds</a>
+          </article>
+
+          <article class="category-card">
+            <span class="category-number">06</span>
+            <h3>The “Actually Comes in 42+” Edit</h3>
+            <p>Good-looking pairs where the extended size run is the point.</p>
+            <a href="#latest-instagram" aria-label="View The Actually Comes in 42+ Edit finds">View finds</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section fit-section" id="size-fit">
+    <section class="section founder-section" aria-labelledby="founder-title">
+      <div class="container founder-card">
+        <div class="founder-image-wrap">
+          <img src="assets/founder.png" alt="Founder of Alta Edit" class="founder-image" />
+        </div>
+        <div class="founder-copy">
+          <p class="eyebrow">Founder note</p>
+          <h2 id="founder-title">A practical edit for a persistent gap.</h2>
+          <p>
+            I started Alta Edit because finding beautiful shoes in larger women’s sizes still takes too much work. The best styles often stop just before the sizes many tall women actually need.
+          </p>
+          <p>
+            Alta Edit is my place to collect the finds, brands and fit shortcuts that make the search easier.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fit-section" id="size-fit" aria-labelledby="size-fit-title">
       <div class="container fit-grid">
         <div class="fit-panel">
           <p class="eyebrow">Size &amp; Fit</p>
-          <h2>Smarter ways to find the right size online.</h2>
+          <h2 id="size-fit-title">Smarter ways to find the right size online.</h2>
           <p>
-            Alta Edit looks beyond the product photo: size range, width, shape, comfort clues, return policies, and new tools that can help make online shoe shopping less of a guessing game.
+            Alta Edit looks beyond the product photo: size range, width, shape, comfort clues, return policies, and tools that can make online shoe shopping less of a guessing game.
           </p>
         </div>
 
@@ -187,62 +215,10 @@
           <div class="tip">
             <span>03</span>
             <div>
-              <h3>Use tools, reviews, and shortcuts</h3>
-              <p>From size charts to review mining and fit tech, the right signals can save a return.</p>
+              <h3>Use reviews and shortcuts</h3>
+              <p>From size charts to review mining, the right signals can save a return.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="latest-finds">
-      <div class="container">
-        <div class="section-header">
-          <p class="eyebrow">Latest Finds</p>
-          <h2>Latest finds start on Instagram.</h2>
-          <p>
-            Follow @altaedit.tall for quick shopping saves, larger-size shoe finds, and sizing tips before they become full guides on the site.
-          </p>
-        </div>
-
-        <div class="finds-grid">
-          <article class="find-card">
-            <div class="find-image find-image-one" aria-hidden="true"></div>
-            <div class="find-content">
-              <p class="find-type">Shoe finds</p>
-              <h3>Large-size shoe links</h3>
-              <p>Curated links from brands and stores that carry extended women’s sizes.</p>
-            </div>
-          </article>
-
-          <article class="find-card">
-            <div class="find-image find-image-two" aria-hidden="true"></div>
-            <div class="find-content">
-              <p class="find-type">Size &amp; fit</p>
-              <h3>Shopping shortcuts</h3>
-              <p>Quick notes on fit, width, size range, and what to check before ordering.</p>
-            </div>
-          </article>
-
-          <article class="find-card">
-            <div class="find-image find-image-three" aria-hidden="true"></div>
-            <div class="find-content">
-              <p class="find-type">Future edit</p>
-              <h3>Tall style picks</h3>
-              <p>Pieces and proportions that work especially well on taller frames.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="instagram-callout">
-          <div>
-            <p class="eyebrow">Follow the feed</p>
-            <h3>@altaedit.tall</h3>
-            <p>First finds, quick saves, and tall-women shopping notes.</p>
-          </div>
-          <a class="button button-primary" href="https://www.instagram.com/altaedit.tall/" target="_blank" rel="noopener noreferrer">
-            Open Instagram
-          </a>
         </div>
       </div>
     </section>
@@ -250,10 +226,10 @@
     <section class="section newsletter-section" id="newsletter">
       <div class="container newsletter-box">
         <div>
-          <p class="eyebrow">Coming soon</p>
-          <h2>Join the list for future edits.</h2>
+          <p class="eyebrow">Join the List</p>
+          <h2>Receive the next edit.</h2>
           <p>
-            Get the best finds, size and fit notes, and tall-women shopping shortcuts when the first guides go live.
+            Get the best finds, size and fit notes, and larger-size shoe shopping shortcuts when new guides go live.
           </p>
         </div>
 
