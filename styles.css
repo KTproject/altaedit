@@ -315,9 +315,9 @@ h3 {
   box-shadow: var(--shadow);
   padding: 24px;
   min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: auto minmax(210px, 1fr) auto auto;
+  gap: 22px;
   overflow: hidden;
   position: relative;
 }
@@ -340,36 +340,47 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 
 .hero-card-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 254, 251, 0.78);
   color: var(--muted);
   font-size: 12px;
   font-weight: 850;
   letter-spacing: 0.16em;
+  line-height: 1;
+  padding: 0 13px;
   text-transform: uppercase;
 }
 
-.hero-card-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background: var(--accent);
+.hero-card-label-dark {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--surface);
 }
 
 .shoe-visual {
   width: 100%;
-  height: 230px;
+  min-height: 220px;
   position: relative;
+  align-self: center;
+  border-radius: 28px;
+  background: rgba(255, 254, 251, 0.42);
 }
 
 .shoe-arch {
   position: absolute;
-  left: 10%;
-  right: 12%;
-  bottom: 82px;
-  height: 118px;
-  border: 24px solid var(--accent);
+  left: 12%;
+  right: 14%;
+  bottom: 88px;
+  height: 120px;
+  border: 22px solid var(--accent);
   border-top-left-radius: 999px;
   border-top-right-radius: 999px;
   border-bottom: 0;
@@ -378,10 +389,10 @@ h3 {
 
 .shoe-base {
   position: absolute;
-  left: 9%;
-  right: 2%;
-  bottom: 70px;
-  height: 38px;
+  left: 10%;
+  right: 6%;
+  bottom: 76px;
+  height: 34px;
   background: var(--text);
   border-radius: 999px 999px 34px 34px;
   transform: rotate(-3deg);
@@ -389,13 +400,40 @@ h3 {
 
 .shoe-heel {
   position: absolute;
-  right: 13%;
-  bottom: 24px;
-  width: 26px;
-  height: 72px;
+  right: 15%;
+  bottom: 30px;
+  width: 24px;
+  height: 68px;
   background: var(--text);
   border-radius: 12px;
   transform: rotate(7deg);
+}
+
+.fit-note-card {
+  max-width: 310px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 254, 251, 0.82);
+  box-shadow: 0 16px 34px rgba(32, 35, 31, 0.06);
+}
+
+.fit-note-card span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent-dark);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.fit-note-card p {
+  margin-bottom: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .hero-card-content {
@@ -404,6 +442,12 @@ h3 {
 
 .hero-card-content h2 {
   font-size: 46px;
+}
+
+.hero-card-content p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 17px;
 }
 
 .intro-section {
@@ -776,7 +820,13 @@ h3 {
   }
 
   .hero-card {
-    min-height: 430px;
+    min-height: auto;
+    grid-template-rows: auto minmax(190px, auto) auto auto;
+  }
+
+  .fit-note-card,
+  .hero-card-content {
+    max-width: none;
   }
 
   .founder-image-wrap {
@@ -835,6 +885,46 @@ h3 {
   .actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .hero-card {
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .hero-card-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .shoe-visual {
+    min-height: 180px;
+  }
+
+  .shoe-arch {
+    left: 11%;
+    right: 13%;
+    bottom: 72px;
+    height: 94px;
+    border-width: 18px;
+  }
+
+  .shoe-base {
+    left: 10%;
+    right: 6%;
+    bottom: 62px;
+    height: 29px;
+  }
+
+  .shoe-heel {
+    right: 14%;
+    bottom: 24px;
+    width: 21px;
+    height: 56px;
+  }
+
+  .hero-card-content h2 {
+    font-size: 40px;
   }
 
   .button {
