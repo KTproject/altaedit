@@ -1,11 +1,15 @@
 # Alta Edit
 
-A static one-page landing site for **Alta Edit** — a curated guide to stylish women’s shoes in larger sizes, size and fit tools, and shopping finds for tall women.
+A static editorial landing site for **Alta Edit** — a curated guide to stylish women’s shoes in larger sizes, size and fit tools, and shopping finds for tall women.
 
 ## Files
 
 ```text
 index.html
+about.html
+contact.html
+affiliate-disclosure.html
+privacy-policy.html
 styles.css
 script.js
 assets/founder.png
@@ -20,8 +24,8 @@ README.md
 
 ## Brand direction
 
-- Font pairing: **Fraunces + Manrope**
-- Palette: **Sage Stone**
+- Font pairing: **Libre Baskerville + Inter**
+- Palette: **Warm editorial neutrals**
 - Instagram: `@altaedit.tall`
 - Domain: `altaedit.com`
 
